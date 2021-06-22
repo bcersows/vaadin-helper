@@ -1,0 +1,32 @@
+badge {
+	color: var(--color-text-inverted);
+	background-color: var(--color-background-dark);
+	border: solid 1px var(--color-background-dark);
+	
+	font-size: 0.9em;
+	
+	display: inline-block;
+	height: fit-content;
+	width: fit-content;
+	
+	border-radius: 5px;
+	padding: 4px;
+	margin: 0 5px;
+	
+	text-transform: uppercase;
+}
+
+badge[theme~="small"] {
+	padding: 0 4px;
+}
+
+badge[theme~="fixed"] {
+	width: 60px;
+	text-align: center;
+}
+
+badge[theme~="bright"] {
+	background-color: var(--color-background-marked);
+	color: var(--color-text);
+	border-color: var(--color-background-shadow);
+}

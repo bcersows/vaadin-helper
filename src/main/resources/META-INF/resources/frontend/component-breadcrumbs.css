@@ -1,0 +1,42 @@
+#breadcrumbs {
+	font-size: 16px;
+	
+	height: 1em;
+	line-height: 1em;
+}
+
+#breadcrumbs .crumb {
+	white-space: nowrap;
+}
+#breadcrumbs .crumb:not(.crumb-plain) {
+	cursor: pointer;
+}
+
+#breadcrumbs>*:not(:first-child) {
+	margin-left: 5px;
+}
+
+#breadcrumbs .crumb-root-icon {
+	height: 1em;
+	width: 1em;
+	
+	vertical-align: initial;
+}
+
+/* on small screens, hide the middle crumbs */
+@media only screen and (max-width: 1280px) {
+    #breadcrumbs .crumb, #breadcrumbs .separator {
+    	display: none;
+    }
+    
+    /* the first and last four crumbs/separators (two each) are being shown */
+    #breadcrumbs .crumb:nth-last-child(-n+4), #breadcrumbs .separator:nth-last-child(-n+4),
+    	#breadcrumbs .crumb:nth-child(-n+4), #breadcrumbs .separator:nth-child(-n+4) {
+    	display: inherit;
+    }
+    
+    /* an ellipsis is bein added after the fourth separator (if enough elements) */
+    #breadcrumbs .separator:nth-child(4):not(:nth-last-child(-n+4)):after {
+		content: "... ";
+	}
+}
