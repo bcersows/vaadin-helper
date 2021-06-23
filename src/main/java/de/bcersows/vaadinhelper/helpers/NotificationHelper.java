@@ -23,7 +23,7 @@ import lombok.NoArgsConstructor;
 /**
  * The notification helper allows easy access to notifications.
  * 
- * @author BCE
+ * @author bcersows
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class NotificationHelper {

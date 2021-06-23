@@ -10,7 +10,7 @@ import com.vaadin.flow.component.html.Div;
 /**
  * Displays a single, tiny bit of information. Should not be mixed with different component types.
  * 
- * @author BCE
+ * @author bcersows
  */
 @Tag("badge")
 @StyleSheet("context://frontend/component-badge.css")

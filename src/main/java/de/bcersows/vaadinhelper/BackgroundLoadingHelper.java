@@ -15,11 +15,13 @@ import lombok.ToString;
 /**
  * Helper to allow background loading.
  * 
- * @author BCE
+ * @author bcersows
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class BackgroundLoadingHelper extends BackgroundOperationManager {
 
+    /** The CSS class name that will allow for UI blurring during loading. **/
+    public static final String STYLE_CLASS_BG_LOADING_CONTENT = "bg-loading-content";
     /** Attribute indicating a background load is in progress. **/
     private static final String ATTRIBUTE_BACKGROUND_LOADING = "background-loading";
 
@@ -136,7 +138,7 @@ public final class BackgroundLoadingHelper extends BackgroundOperationManager {
     /**
      * Background loading implementation of a background operation.
      * 
-     * @author BCE
+     * @author bcersows
      */
     private static class BackgroundLoadingOperation<R> extends BackgroundOperation<R> {
         /** Task for checking the loading data. **/

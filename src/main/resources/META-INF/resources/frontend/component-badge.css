@@ -1,3 +1,11 @@
+:root {
+	--color-background-dark: #333;
+	--color-background-marked: #dee9ff;
+	--color-background-shadow: #888;
+	--color-text: #222;
+	--color-text-inverted: #EEE;
+}
+
 badge {
 	color: var(--color-text-inverted);
 	background-color: var(--color-background-dark);

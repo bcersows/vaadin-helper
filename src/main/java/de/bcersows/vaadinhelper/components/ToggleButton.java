@@ -15,7 +15,7 @@ import com.vaadin.flow.component.html.Span;
 /**
  * Depicts a slider-themed toggle button/check box. Based on https://www.w3schools.com/howto/howto_css_switch.asp.
  * 
- * @author BCE
+ * @author bcersows
  */
 @StyleSheet("context://frontend/component-toggle-button.css")
 public class ToggleButton extends CustomField<Boolean> {

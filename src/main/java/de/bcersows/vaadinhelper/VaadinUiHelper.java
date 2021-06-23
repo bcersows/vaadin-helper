@@ -25,7 +25,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * Helper class for common Vaadin UI operations.
  * 
- * @author BCE
+ * @author bcersows
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @Slf4j

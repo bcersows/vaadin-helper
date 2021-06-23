@@ -19,7 +19,7 @@ import com.vaadin.flow.shared.Registration;
  * Helper for components to handler events and listeners without relying on {@link Component#addListener}. If the event type is not generic, or DOM
  * functionality is required, then the {@link Component} version can be used.
  * 
- * @author BCE
+ * @author bcersows
  */
 public abstract class EventHandlerHelper<COMPONENT extends Component, EVENT extends ComponentEvent<COMPONENT>, TYPE extends EventListener> {
     /** Listeners for component events. **/
@@ -53,7 +53,7 @@ public abstract class EventHandlerHelper<COMPONENT extends Component, EVENT exte
     /**
      * An instance of the event handler for {@link ComponentEvent}s.
      * 
-     * @author BCE
+     * @author bcersows
      */
     public static class ComponentEventHandler<COMPONENT extends Component, EVENT extends ComponentEvent<COMPONENT>, TYPE extends ComponentEventListener<EVENT>>
             extends EventHandlerHelper<COMPONENT, EVENT, TYPE> {
@@ -66,7 +66,7 @@ public abstract class EventHandlerHelper<COMPONENT extends Component, EVENT exte
     /**
      * An instance of the event handler for {@link ValueChangeEvent}s.
      * 
-     * @author BCE
+     * @author bcersows
      */
     public static class ValueChangedEventHandler<COMPONENT extends Component, EVENT extends ComponentValueChangeEvent<COMPONENT, ?>, TYPE extends ValueChangeListener<EVENT>>
             extends EventHandlerHelper<COMPONENT, EVENT, TYPE> {

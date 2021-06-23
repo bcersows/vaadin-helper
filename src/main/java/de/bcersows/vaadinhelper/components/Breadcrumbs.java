@@ -43,7 +43,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * A breadcrumbs component for navigation purposes.
  * 
- * @author BCE
+ * @author bcersows
  */
 @StyleSheet("context://frontend/component-breadcrumbs.css")
 @Slf4j
@@ -867,7 +867,7 @@ public class Breadcrumbs extends Component {
     /**
      * A single crumb of the breadcrumbs.
      * 
-     * @author BCE
+     * @author bcersows
      */
     @Retention(RetentionPolicy.RUNTIME)
     @Target(ElementType.TYPE)
@@ -919,7 +919,7 @@ public class Breadcrumbs extends Component {
     /**
      * Marks a page that can be navigated to.
      * 
-     * @author BCE
+     * @author bcersows
      * 
      * @see EnhancedNavigationTarget
      */
@@ -930,7 +930,7 @@ public class Breadcrumbs extends Component {
     /**
      * Marks a page that can be navigated to.
      * 
-     * @author BCE
+     * @author bcersows
      * 
      * @see NavigationTarget
      */

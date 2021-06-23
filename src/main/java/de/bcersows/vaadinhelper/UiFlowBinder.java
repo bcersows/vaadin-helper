@@ -18,7 +18,7 @@ import lombok.EqualsAndHashCode;
 /**
  * Allows for UI flows and simple validation by enabling some elements only after others are filled.
  * 
- * @author BCE
+ * @author bcersows
  */
 // TODO add mode to allow for showing/hiding based on other component?
 // don't care about generics naming

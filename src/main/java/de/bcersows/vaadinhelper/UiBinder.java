@@ -31,7 +31,7 @@ import lombok.ToString;
  *            the type of the data
  * @param <ParentEntityT>
  *            when using nested {@code UiBinder}s, this is the data type of the parent binder; {@code Void} for the top level binder
- * @author BCE
+ * @author bcersows
  */
 // we do want to actively state runtime exceptions; custom generics names
 @SuppressWarnings({ "java:S1130", "java:S119" })

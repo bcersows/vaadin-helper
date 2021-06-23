@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 /**
  * Helper for logging-related methods.
  * 
- * @author BCE
+ * @author bcersows
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class LogHelper {

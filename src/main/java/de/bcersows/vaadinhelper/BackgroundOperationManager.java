@@ -24,10 +24,12 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 
+// TODO: make alle implementations non-static to allow for customization
+
 /**
  * The base class for background operations.
  * 
- * @author BCE
+ * @author bcersows
  */
 @Slf4j
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -72,7 +74,7 @@ public abstract class BackgroundOperationManager {
     /**
      * Base background operation blueprint.
      * 
-     * @author BCE
+     * @author bcersows
      */
     protected abstract static class BackgroundOperation<R> {
         /** The task to handle data. **/
@@ -270,7 +272,7 @@ public abstract class BackgroundOperationManager {
     /**
      * Base exception for problems occurring during REST calls.
      * 
-     * @author BCE
+     * @author bcersows
      */
     @Data
     @EqualsAndHashCode(callSuper = true)

@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 /**
  * A helper for background operations that write data.
  * 
- * @author BCE
+ * @author bcersows
  */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class BackgroundUpdateHelper extends BackgroundOperationManager {
@@ -134,7 +134,7 @@ public final class BackgroundUpdateHelper extends BackgroundOperationManager {
     /**
      * Implementation of a background operation.
      * 
-     * @author BCE
+     * @author bcersows
      */
     private static class BackgroundWriteOperation<V, R> extends BackgroundOperation<R> {
         /** The configuration of the operation. **/
